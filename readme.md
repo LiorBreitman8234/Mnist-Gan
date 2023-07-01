@@ -7,7 +7,11 @@
 ![How Fake Images Look](pics/fake.png)
 
 - I also created a little game you can play and guess if the images you see are fake or real:
+
+
   ![game](pics/game.png)
+
+  
 - To run it, just run
 ```
 python3 path/to/game.py
