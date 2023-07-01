@@ -58,7 +58,7 @@ class PictureGuesser:
         self.title_label.pack()
 
         self.picture_label = tk.Label(self.window)
-        self.picture_label.config(width=250, height=250)
+        self.picture_label.config(width=100, height=100)
         self.picture_label.pack()
 
         self.real_button = tk.Button(self.window, text="Real", command=lambda: self.check_guess(True))
@@ -86,7 +86,7 @@ class PictureGuesser:
             noise = torch.randn(1,128,1,1)
             image = self.gen(noise).squeeze()
             image = transforms.ToPILImage()(image)
-        image = image.resize((250, 250))
+        image = image.resize((100, 100))
         photo = ImageTk.PhotoImage(image)
         self.picture_label.config(image=photo)
         self.picture_label.image = photo
