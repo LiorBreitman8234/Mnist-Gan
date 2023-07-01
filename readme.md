@@ -8,5 +8,9 @@
 
 - I also created a little game you can play and guess if the images you see are fake or real:
   ![game](pics/game.png)
+- To run it, just run
+```
+python3 path/to/game.py
+```
 - The images are small because if you make them bigger it will just look very blurry
 - If you are running it for the first time, It will download the mnist data for you
