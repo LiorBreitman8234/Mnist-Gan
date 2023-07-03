@@ -14,7 +14,7 @@
 - I also fixed a noise vector to see how the generator will progress as the training goes on, and these are the results. I took one image at the start of an epoch and near the end of each epoch: ![prog](pics/prog.png)
 	- As we can see, it takes a good 10-12 epochs for the generator to start making something the looks like a number. 
 	- That is probably because i used the vanilla SGD optimizer, with 0.003 learning rate, as other optimizers I tried collapsed vary fast. 
-I Trained multiple times, and, in the end, I saw that the best amount of epochs s.t. the generator is good enough but doesn't collapse is around 50 epochs:
+- I Trained multiple times, and, in the end, I saw that the best amount of epochs s.t. the generator is good enough but doesn't collapse is around 50 epochs:
 
 ![How Fake Images Look](pics/fake.png)
 
